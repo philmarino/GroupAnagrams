@@ -6,7 +6,7 @@ def groupAnagrams(strs):
             temp = output.get(key)
             temp.append(word)
             output.update({key : temp})
-            #output.update({key : output.get(key).append(word)})
+            output.update({key : output.get(key).append(word)})
         else:
             output.update({key : [word]})
 
